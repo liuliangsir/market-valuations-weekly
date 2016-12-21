@@ -199,7 +199,18 @@ let info = {
 
             }
           }
-        ]
+        ],
+        toolbox: {
+            feature: {
+                dataZoom: {
+                    yAxisIndex: 'none'
+                },
+                restore: {},
+                saveAsImage: {
+                    backgroundColor: 'transparent'
+                }
+            }
+        }
       },
       {
         tooltip: {
@@ -367,7 +378,18 @@ let info = {
 
             }
           }
-        ]
+        ],
+        toolbox: {
+            feature: {
+                dataZoom: {
+                    yAxisIndex: 'none'
+                },
+                restore: {},
+                saveAsImage: {
+                    backgroundColor: 'transparent'
+                }
+            }
+        }
       },
       {
         title: {
@@ -426,7 +448,18 @@ let info = {
               }
             }
           }
-        ]
+        ],
+        toolbox: {
+            feature: {
+                dataZoom: {
+                    yAxisIndex: 'none'
+                },
+                restore: {},
+                saveAsImage: {
+                    backgroundColor: 'transparent'
+                }
+            }
+        }
       },
       {
         title: {
@@ -486,7 +519,18 @@ let info = {
               }
             }
           }
-        ]
+        ],
+        toolbox: {
+            feature: {
+                dataZoom: {
+                    yAxisIndex: 'none'
+                },
+                restore: {},
+                saveAsImage: {
+                    backgroundColor: 'transparent'
+                }
+            }
+        }
       },
       {
         xAxis: {
@@ -583,7 +627,18 @@ let info = {
               color: '#fab696'
             }
           }
-        }]
+        }],
+        toolbox: {
+            feature: {
+                dataZoom: {
+                    yAxisIndex: 'none'
+                },
+                restore: {},
+                saveAsImage: {
+                    backgroundColor: 'transparent'
+                }
+            }
+        }
       }
     ],
     cb() {
