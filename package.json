@@ -54,8 +54,7 @@
     "url-loader": "^0.5.7",
     "webpack": "^1.12.2",
     "webpack-dev-middleware": "^1.4.0",
-    "webpack-hot-middleware": "^2.6.0",
-    "why-did-you-update": "0.0.8"
+    "webpack-hot-middleware": "^2.6.0"
   },
   "keywords": [
     "echarts",
