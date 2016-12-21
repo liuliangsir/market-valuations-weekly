@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html data-time='{{date}}'>
+  <head>
+    <meta charset="utf-8">
+    <title>华尔街股票网市场估值周报</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-table.css" rel="stylesheet">
+    <link href="/static/css/index.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h2><center id="weekly-title">市场估值周报</center></h2>
+      <ol class="market-valuations-weekly-list">
+        <li>
+          <h3>一. 全球市场一周回顾：</h3>
+          <div class="table-responsive">
+            <table data-row-style='rowStyle' id="firstTable">
+              <thead>
+                <tr>
+                  <th data-field="stock_name" data-halign="center" data-align="center">&nbsp;</th>
+                  <th data-field="pe" data-halign="center" data-align="center">静态PE<br/>(TTM)</th>
+                  <th data-field="pb" data-halign="center" data-align="center">PB<br/>&nbsp;</th>
+                  <th data-field="f_percent_weekly_performance" data-halign="center" data-align="center">周涨跌幅<br/>(%)</th>
+                  <th data-field="f_percent_monthly_performance" data-halign="center" data-align="center">月涨跌幅<br/>(%)</th>
+                  <th data-field="f_percent_6month_performance" data-halign="center" data-align="center">半年涨<br/>跌幅(%)</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <img class="table-responsive-image-0" src=""/>
+          <p class="market-valuations-weekly-img-desc">图1：美股静态市盈率和全球主要股指市盈率比较</p>
+          <p class="market-valuations-weekly-desc"><span id="last-global-stock">上周全球主要股票指数，有{$1}只下跌、{$2}只上涨</span>。<span id="english"></span>，<span id="france"></span>，<span id="germany"></span>，<span id="china"></span>。</p>
+          <p class="market-valuations-weekly-desc">美股方面，<span id="sp"></span>；<span id="nasdaq"></span>；<span id="jones"></span>。</p>
+        </li>
+        <li>
+          <h3>二．板块估值历史比较：</h3>
+          <div id="firstContainer" class="echarts-container"></div>
+          <center><img src="" class="echarts-container-image-0"/></center>
+          <p class="market-valuations-weekly-img-desc no-padding-top">图2：过去10年标普500静态PE历史比较</p>
+          <div id="secondContainer" class="echarts-container"></div>
+          <center><img src="" class="echarts-container-image-1"/></center>
+          <p class="market-valuations-weekly-img-desc no-padding-top padding-bottom-50">图3：过去10年标普500PB历史比较</p>
+          <div class="progress-bar-wrapper">
+            <div class="progress-bar-indicators-wrapper clearfix">
+              <div class="progress-bar-indicators-padding pull-left"></div>
+              <div class="progress-bar-indicators pull-left">
+                <span>0%</span>
+                <span>20%</span>
+                <span>40%</span>
+                <span>60%</span>
+                <span>
+                  <i>80%</i>
+                  <i>100%</i>
+                </span>
+              </div>
+            </div>
+            <div class="progress-bar-content-wrapper">
+              <div class="progress-bar-content" id="firstProgressBarContent">
+              </div>
+              <div class="progress-bar-icon clearfix">
+                <div class="progress-bar-icon-item pull-left">
+                  <span class="progress-bar-button"></span><br/>
+                  <span>当前值</span>
+                </div>
+                <div class="progress-bar-icon-item pull-left">
+                  <span class="progress-bar-start-icon"></span><br/>
+                  <span>最低值</span>
+                </div>
+                <div class="progress-bar-icon-item pull-left">
+                  <span class="progress-bar-end-icon"></span><br/>
+                  <span>最高值</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <center><img class="progress-bar-wrapper-image-0" src=""/></center>
+          <p class="market-valuations-weekly-img-desc">图4：当前PE在过去十年PE中的相对位置(%)</p>
+          <div id="thirdContainer" class="echarts-container"></div>
+          <center><img src="" class="echarts-container-image-2"/></center>
+          <p class="market-valuations-weekly-img-desc no-padding-top padding-bottom-50">图5：各板块当前PE</p>
+          <div class="progress-bar-wrapper">
+            <div class="progress-bar-indicators-wrapper clearfix">
+              <div class="progress-bar-indicators-padding pull-left"></div>
+              <div class="progress-bar-indicators pull-left">
+                <span>0%</span>
+                <span>20%</span>
+                <span>40%</span>
+                <span>60%</span>
+                <span>
+                  <i>80%</i>
+                  <i>100%</i>
+                </span>
+              </div>
+            </div>
+            <div class="progress-bar-content-wrapper">
+              <div class="progress-bar-content" id="secondProgressBarContent">
+              </div>
+              <div class="progress-bar-icon clearfix">
+                <div class="progress-bar-icon-item pull-left">
+                  <span class="progress-bar-button"></span><br/>
+                  <span>当前值</span>
+                </div>
+                <div class="progress-bar-icon-item pull-left">
+                  <span class="progress-bar-start-icon"></span><br/>
+                  <span>最低值</span>
+                </div>
+                <div class="progress-bar-icon-item pull-left">
+                  <span class="progress-bar-end-icon"></span><br/>
+                  <span>最高值</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <center><img class="progress-bar-wrapper-image-1" src=""/></center>
+          <p class="market-valuations-weekly-img-desc">图6：当前PB在过去十年PB中的相对位置(%)</p>
+          <div id="forthContainer" class="echarts-container"></div>
+          <center><img src="" class="echarts-container-image-3"/></center>
+          <p class="market-valuations-weekly-img-desc no-padding-top padding-bottom-50">图7：各板块当前PB</p>
+          <div id="fifthContainer" class="echarts-container"></div>
+          <center><img src="" class="echarts-container-image-4"/></center>
+          <p class="market-valuations-weekly-img-desc padding-bottom-50">图8：各板块静态PE与PB</p>
+          <div class="table-responsive">
+            <table data-row-style='otherRowStyle' id="secondTable">
+              <thead>
+                <tr>
+                  <th data-field="stock_name" data-halign="center" data-align="center">&nbsp;</th>
+                  <th data-field="ttm_pe" data-halign="center" data-align="center">静态PE<br/>(TTM)</th>
+                  <th data-field="ttm_pb" data-halign="center" data-align="center">PB<br/>&nbsp;</th>
+                  <th data-field="f_percent_weekly_performance" data-halign="center" data-align="center">周涨跌幅<br/>(%)</th>
+                  <th data-field="f_percent_monthly_performance" data-halign="center" data-align="center">月涨跌幅<br/>(%)</th>
+                  <th data-field="f_percent_6month_performance" data-halign="center" data-align="center">半年涨<br/>跌幅(%)</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <img class="table-responsive-image-1" src=""/>
+          <p class="market-valuations-weekly-img-desc">图9：一周板块表现与最新估值</p>
+        </li>
+      </ol>
+    </div>
+    {% for (var chunk in o.htmlWebpackPlugin.files.chunks) { %}
+    <script src="{%=o.htmlWebpackPlugin.files.chunks[chunk].entry %}"></script>
+    {% } %}
+    <script>
+      let classes = ['less-important-info', 'most-important-info']
+      function rowStyle (row, index) {
+        // 实现标普500&道琼斯&纳斯达克特殊标记
+        const stockNames = ['标普500', '道琼斯工业', 'NASDAQ', '纳指100']
+        const isInArray = (item, items) => items.indexOf(item) >= 0
+        const isAbsoluteEqual = (v1, v2) => v1 === v2
+        return isInArray(row['stock_name'], stockNames) ? { classes: classes[1] } : (isAbsoluteEqual(index % 2, 0) ? { classes: classes[0] } : {} )
+      }
+      function otherRowStyle (row, index) {
+        return Object.is((index + 1) % 2, 0) ? { classes: classes[0] } : {}
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+html, 
+body,
+#app,
+#app > div {
+    height: 100%;
+}
+body {
+    font-family: "微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+h2 {
+    color: #923736;
+    font-size: 18px;
+}
+.market-valuations-weekly-list {
+    list-style: none;
+    padding-left: 0;
+}
+.market-valuations-weekly-list h3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.market-valuations-weekly-img-desc {
+    padding-top: 20px;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+.market-valuations-weekly-img-desc.no-padding-top {
+    padding-top: 0px;
+
+}
+.market-valuations-weekly-desc {
+    font-size: 14px;
+    margin: 0;
+    padding-top: 20px;
+}
+.market-valuations-weekly-desc.no-padding-top {
+    padding-top: 0px;
+
+}
+.echarts-container {
+    height: 500px;
+}
+.progress-bar-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f8f9fa;
+}
+.progress-bar-indicators-wrapper .progress-bar-indicators {
+    width: 75%;
+    display: table;
+    padding-top: 30px;
+}
+.progress-bar-indicators-wrapper .progress-bar-indicators-padding {
+    width: 12.5%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.progress-bar-indicators span {
+    display: table-cell;
+    vertical-align: bottom;
+    width: calc(100%/5);
+    white-space: nowrap;
+}
+.progress-bar-indicators span:last-child {
+    font-size: 0;
+}
+.progress-bar-indicators span i {
+    width: 50%;
+    font-size: 14px;
+    display: inline-block;
+}
+.progress-bar-indicators span i:last-child {
+    text-align: right;
+}
+.progress-bar-content-wrapper {
+    overflow: hidden;
+    width: 100%;
+    border-top: 2px solid #fff;
+}
+.progress-bar-content-item {
+    overflow: hidden;
+}
+.progress-bar-content-item > :nth-child(1) {
+    width: 12.5%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 11px;
+}
+.progress-bar-content-item :nth-child(2) {
+    width: 75%;
+    position: relative;
+}
+.progress-bar-content-item :nth-child(2) :not(.progress-bar-button):before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 2px;
+    height: 10px;
+    background-color: #f59653;
+    border-radius: 2px;
+}
+.progress-bar-content-item :nth-child(2) :not(.progress-bar-button):after {
+    content: ' ';
+    position: absolute;
+    right: 0;
+    top: 15px;
+    width: 2px;
+    height: 10px;
+    background-color: #54c9a4;
+    border-radius: 4px;
+}
+.progress-bar-content-item :nth-child(2) span {
+    position: absolute;
+    top: 15px;
+}
+.progress-bar-button {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #f3cb82;
+    transform: rotate(45deg);
+    display: inline-block;
+}
+.progress-bar-icon {
+    width: 40%;
+    margin: 0 auto;
+}
+.progress-bar-icon-item {
+    width: calc(100%/3);
+    text-align: center;
+}
+.progress-bar-start-icon {
+    width: 2px;
+    height: 10px;
+    background-color: #f59653;
+    border-radius: 2px;
+    display: inline-block;
+}
+.progress-bar-end-icon {
+    width: 2px;
+    height: 10px;
+    background-color: #54c9a4;
+    border-radius: 4px;
+    display: inline-block;
+}
+.padding-bottom-50 {
+    padding-bottom: 50px;
+}
+.absolute {
+    position: absolute;
+    top: 10000px;
+    left: 10000px;
+}
+img {
+    max-width: 100%;
+}
+hr {
+    border-color: #e5e5e5;
+    border-width: 2px;
+}
+.most-important-info {
+    background-color: #c2e2f2;
+}
+.less-important-info {
+    background-color: #e1f2fa;
+}
