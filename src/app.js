@@ -207,7 +207,7 @@ let info = {
                 },
                 restore: {},
                 saveAsImage: {
-                    backgroundColor: 'transparent'
+                    backgroundColor: '#fff'
                 }
             }
         }
@@ -386,7 +386,7 @@ let info = {
                 },
                 restore: {},
                 saveAsImage: {
-                    backgroundColor: 'transparent'
+                    backgroundColor: '#fff'
                 }
             }
         }
@@ -456,7 +456,7 @@ let info = {
                 },
                 restore: {},
                 saveAsImage: {
-                    backgroundColor: 'transparent'
+                    backgroundColor: '#fff'
                 }
             }
         }
@@ -527,7 +527,7 @@ let info = {
                 },
                 restore: {},
                 saveAsImage: {
-                    backgroundColor: 'transparent'
+                    backgroundColor: '#fff'
                 }
             }
         }
@@ -635,7 +635,7 @@ let info = {
                 },
                 restore: {},
                 saveAsImage: {
-                    backgroundColor: 'transparent'
+                    backgroundColor: '#fff'
                 }
             }
         }
